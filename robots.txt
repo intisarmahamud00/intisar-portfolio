@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intisarmahamud00.github.io/intisar-portfolio/sitemap.xml
