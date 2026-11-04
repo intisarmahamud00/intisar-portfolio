@@ -48,7 +48,7 @@
         <span></span><span></span>
       </button>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#cv">CV</a><a href="#audio-cv">Audio CV</a><a href="#contact">Contact</a>
       </nav>
       <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
     </header>
@@ -81,7 +81,7 @@
         </div>
       </section>
 
-      <section class="marquee" aria-label="Key skills">
+      <section class="marquee" data-nav-theme="dark" aria-label="Key skills">
         <div class="marquee-track"><span>Client communication</span><i>✦</i><span>Website building</span><i>✦</i><span>UI design</span><i>✦</i><span>Data annotation</span><i>✦</i><span>Remote collaboration</span><i>✦</i></div>
       </section>
 
@@ -108,7 +108,7 @@
         </div>
       </section>
 
-      <section class="experience section-wrap" id="experience">
+      <section class="experience section-wrap" id="experience" data-nav-theme="dark">
         <div class="experience-header reveal"><div class="section-heading"><p class="eyebrow"><span></span> 03 / Journey</p><h2>Experience that<br /><em>keeps growing.</em></h2></div><p>Each role has strengthened the same core promise: thoughtful work, dependable follow-through, and a genuine respect for the people relying on me.</p></div>
         <div class="timeline">
           <article class="timeline-card current reveal"><div class="timeline-top"><span class="status">Current role</span><span>Jan 2026 — Present</span></div><h3>Jr. Support Assistant</h3><p class="company">Digitavision Limited</p><ul><li>Promoted in recognition of strong performance, commitment, and practical contributions.</li><li>Support troubleshooting, client communication, administrative work, and team collaboration.</li><li>Create social content while managing priorities in a remote-work environment.</li></ul><div class="card-tags"><span>Support</span><span>Troubleshooting</span><span>Remote work</span></div></article>
@@ -129,7 +129,7 @@
         </div>
       </section>
 
-      <section class="cv-section section-wrap" id="cv">
+      <section class="cv-section section-wrap" id="cv" data-nav-theme="lime">
         <div class="cv-card reveal">
           <div class="cv-paper" aria-hidden="true"><div class="paper-top"><span>IM</span><i></i><i></i><i></i></div><div class="paper-title"></div><div class="paper-subtitle"></div><div class="paper-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="paper-columns"><span></span><span></span></div></div>
           <div class="cv-copy"><p class="eyebrow"><span></span> 05 / Resume</p><h2>Want the full<br /><em>picture?</em></h2><p>Explore my complete CV for a detailed look at my experience, education, skills, and professional journey.</p><div class="cv-actions"><a class="button button-light" href="assets/Intisar-Mahamud-CV.pdf" target="_blank" rel="noopener">View my CV <span>↗</span></a><a class="download-link" href="assets/Intisar-Mahamud-CV.pdf" download>Download PDF <span>↓</span></a></div></div>
@@ -137,8 +137,25 @@
         </div>
       </section>
 
+      <section class="audio-cv-section section-wrap" id="audio-cv" data-nav-theme="dark">
+        <div class="audio-cv-card reveal">
+          <div class="audio-cv-icon" aria-hidden="true"><span>♪</span></div>
+          <div class="audio-cv-copy">
+            <p class="eyebrow"><span></span> 06 / Audio CV</p>
+            <h2>Hear my story<br /><em>in my own voice.</em></h2>
+            <p>A short audio introduction to my experience, skills, and the support and operations roles I am ready to take on.</p>
+          </div>
+          <div class="audio-player-wrap">
+            <button class="audio-play-button" id="audio-play-button" type="button" aria-label="Play audio CV" aria-pressed="false"><span class="play-icon" aria-hidden="true">▶</span><span class="pause-icon" aria-hidden="true">Ⅱ</span></button>
+            <div class="audio-player-info"><strong>Intisar's Audio CV</strong><span id="audio-status">Ready to play</span></div>
+            <div class="audio-progress" aria-hidden="true"><span id="audio-progress-bar"></span></div>
+            <audio id="audio-cv-player" preload="metadata"><source src="assets/Intisar.mp3" type="audio/mpeg" />Your browser does not support audio playback.</audio>
+          </div>
+        </div>
+      </section>
+
       <section class="contact section-wrap" id="contact">
-        <div class="contact-intro reveal"><p class="eyebrow"><span></span> 06 / Contact</p><h2>Let's make the next<br /><em>conversation count.</em></h2><p>Have an opportunity, a project, or a question? I would be glad to hear from you.</p></div>
+        <div class="contact-intro reveal"><p class="eyebrow"><span></span> 07 / Contact</p><h2>Let's make the next<br /><em>conversation count.</em></h2><p>Have an opportunity, a project, or a question? I would be glad to hear from you.</p></div>
         <div class="contact-layout">
           <form class="contact-form reveal delay-1" id="contact-form">
             <div class="form-row"><label>Name<input required name="name" type="text" placeholder="Your name" /></label><label>Email<input required name="email" type="email" placeholder="you@example.com" /></label></div>
